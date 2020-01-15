@@ -6,9 +6,9 @@ events.on("push", () => {
     "echo Hello",
     "echo World",
     "cd /src",
-    "ls",
+    "ls -lrt",
     "cd image-processing",
-    "ls",
+    "ls -lrt",
     "pwd",
 //    "docker build -t packageimage:latest ."
   ];
