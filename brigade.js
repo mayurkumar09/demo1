@@ -5,8 +5,11 @@ events.on("push", () => {
   job.tasks = [
     "echo Hello",
     "echo World",
-    "cd /src/image-processing/",
+    "cd /src",
     "ls",
+    "cd image-processing",
+    "ls",
+    "pwd",
 //    "docker build -t packageimage:latest ."
   ];
 
