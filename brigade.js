@@ -1,10 +1,13 @@
 
 const { events, Job } = require("brigadier");
 events.on("push", () => {
-  var job = new Job("do-nothing", "alpine:3.8");
+  var job = new Job("package", "alpine:3.8");
   job.tasks = [
     "echo Hello",
-    "echo World"
+    "echo World",
+    "cd src/demo1",
+    "ls",
+    "sudo docker build -t packageimage:latest ."
   ];
 
 
