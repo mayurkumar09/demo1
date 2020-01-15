@@ -1,7 +1,7 @@
 
 const { events, Job } = require("brigadier");
 events.on("push", () => {
-  var job = new Job("package", "alpine:3.8");
+  var job = new Job("package", "docker:dind");
   job.tasks = [
     "echo Hello",
     "echo World",
